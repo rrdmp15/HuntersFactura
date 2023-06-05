@@ -1,33 +1,29 @@
 <div class="container bg-secondary bg-gradient rounded" style="--bs-bg-opacity: .4; border-style: dashed;">
-    <div class="row cols-2 cols-sm-2 gy-2 py-4">
+    <div class="row gy-2 py-4 my-2 overflow-auto" style="height: 250px;">
         <div class="col-md-12 text-center"><h2>Invoice header</h2></div>
-        <div class="row row-cols-sm-4 gy-2 py-4">
+        <div class="row row-cols-sm-6 g-2 py-2 ">
             <div>
-                <label for="N_Bill" class="form-label">N de bill</label>
-                <input type="number" class="form-control" name="N_Bill" id="N_Bill" placeholder="Type the bill's number">
+                <label for="id_product" class="form-label">Product Id</label>
+                <input type="text" class="form-control" name="id_product" id="id_product" placeholder="Type the product id">
             </div>
             <div>
-                <label for="Bill_Date" class="form-label">Bill Date</label>
-                <input type="date" class="form-control" name="Bill_Date" id="Bill_Date">
+                <label for="name_product" class="form-label">Product Name</label>
+                <input type="text" class="form-control" name="name_product" id="name_product" placeholder="Type the product name">
             </div>
             <div>
-                <label for="Seller" class="form-label">Seller</label>
-                <input type="text" class="form-control" name="Seller" id="Seller" placeholder="Type the seller's name">
+                <label for="amount" class="form-label">Amount</label>
+                <input type="number" class="form-control" name="amount" id="amount" readonly placeholder="Type the amount">
             </div>
             <div>
-                <label for="Identification" class="form-label">Customer identification</label>
-                <input type="number" class="form-control" name="Identification" id="Identification" placeholder="Type the customer's ID">
+                <label for="value_product" class="form-label">Unit value</label>
+                <input type="number" class="form-control" name="value_product" id="value_product" placeholder="Type the value">
             </div>
-            <div>
-                <label for="Identification" class="form-label">Customer identification</label>
-                <input type="number" class="form-control" name="Identification" id="Identification" placeholder="Type the customer's ID">
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn w-100 h-100 btn-outline-success">+</button>
             </div>
-            <div>
-                
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn w-100 h-100 btn-outline-danger">-</button>
             </div>
         </div>
-        
-
-       
     </div>
 </div>
